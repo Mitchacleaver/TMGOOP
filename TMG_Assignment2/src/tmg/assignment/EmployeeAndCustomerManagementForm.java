@@ -731,6 +731,11 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         cuAddressTextField.setVisible(option); cuPhoneTextField.setVisible(option);
         cuLicenseNumberTextField.setVisible(option); cuLicenseExpiryTextField.setVisible(option);
         cuAgeTextField.setVisible(option); cuGenderTextField.setVisible(option);
+        resultsCuNameTextField.setVisible(option); resultsCuDOBTextField.setVisible(option);
+        resultsCuAddressTextField.setVisible(option); resultsCuPhoneTextField.setVisible(option);
+        resultsCuLicenseNumberTextField.setVisible(option);resultsCuLicenseExpiryTextField.setVisible(option);
+        resultsCuAgeTextField.setVisible(option);resultsCuGenderComboBox.setVisible(option);
+        
     }
     private void addNewEmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewEmButtonActionPerformed
         // TODO add your handling code here:
