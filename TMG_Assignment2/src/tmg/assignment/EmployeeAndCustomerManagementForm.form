@@ -103,7 +103,7 @@
                                           <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                                              <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cuSearchResultsTextField" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="397" max="-2" attributes="0"/>
@@ -198,7 +198,7 @@
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                      <Component id="cuSearchResultsTextField" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="cuNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -347,7 +347,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchCuIDButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel25">
+            <Component class="javax.swing.JLabel" name="cuSearchResultsTextField">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="0" red="ff" type="rgb"/>
@@ -396,7 +396,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                              <Component id="empSearchResultsTextField" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
@@ -408,24 +408,24 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="searchEmpIDTextField" min="-2" pref="121" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              <Component id="empSearchButton" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empDOBTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empPhoneTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empPhoneExtensionTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empUsernameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empGenderTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empNameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="empAddressTextField" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="resultsEmpDOBTextField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="resultsEmpNameTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpAdressTextField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="resultsEmpAddressTextField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="resultsEmpPhoneTextField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="resultsEmpPhoneExtensionTextField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="resultsEmpUsernameTextField" alignment="0" max="32767" attributes="0"/>
@@ -450,43 +450,43 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="searchEmpIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                      <Component id="empSearchResultsTextField" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empDOBTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpDOBTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="resultsEmpAdressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="resultsEmpAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empPhoneExtensionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpPhoneExtensionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empUsernameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpUsernameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="empGenderTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpGenderComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
@@ -508,10 +508,13 @@
                 <Property name="text" type="java.lang.String" value="Search/Update Employee"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
+            <Component class="javax.swing.JButton" name="empSearchButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Search"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="empSearchButtonActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="searchEmpIDTextField">
             </Component>
@@ -520,7 +523,7 @@
                 <Property name="text" type="java.lang.String" value="Search by ID:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel14">
+            <Component class="javax.swing.JLabel" name="empNameTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Name:"/>
               </Properties>
@@ -529,26 +532,26 @@
             </Component>
             <Component class="javax.swing.JTextField" name="resultsEmpDOBTextField">
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel15">
+            <Component class="javax.swing.JLabel" name="empDOBTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Date of Birth:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel16">
+            <Component class="javax.swing.JLabel" name="empAddressTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Address:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="resultsEmpAdressTextField">
+            <Component class="javax.swing.JTextField" name="resultsEmpAddressTextField">
             </Component>
             <Component class="javax.swing.JTextField" name="resultsEmpPhoneTextField">
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel17">
+            <Component class="javax.swing.JLabel" name="empPhoneTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Phone Number:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel18">
+            <Component class="javax.swing.JLabel" name="empPhoneExtensionTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Phone Extension:"/>
               </Properties>
@@ -557,12 +560,12 @@
             </Component>
             <Component class="javax.swing.JTextField" name="resultsEmpUsernameTextField">
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel19">
+            <Component class="javax.swing.JLabel" name="empUsernameTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Username:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel20">
+            <Component class="javax.swing.JLabel" name="empGenderTextField">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Gender:"/>
               </Properties>
@@ -580,7 +583,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel21">
+            <Component class="javax.swing.JLabel" name="empSearchResultsTextField">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="0" red="ff" type="rgb"/>
