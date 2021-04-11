@@ -14,8 +14,9 @@ import javax.swing.JOptionPane;
  * @author mitch
  */
 public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
-    ArrayList<Customer> customers = new ArrayList<>();
-    ArrayList<Employee> employees = new ArrayList<>();
+    ArrayList<Person> persons = new ArrayList<Person>();
+    ArrayList<Customer> customers = new ArrayList<Customer>();
+    ArrayList<Employee> employees = new ArrayList<Employee>();
 
     /**
      * Creates new form EmployeeAndCustomerManagementForm
@@ -814,7 +815,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
             resultsCuGenderComboBox.setSelectedItem(found.getGender());            
             resultsCuDOBTextField.setDate(found.getDateOfBirth());
             resultsCuLicenseExpiryTextField.setDate(found.getLicenseExpiry());
-            resultsCuAgeTextField.int age.parseint.setText(found.getAge());
+            resultsCuAgeTextField.setText(String.valueOf(found.getAge()));
             
         }
         isCustomerVisible(true);
