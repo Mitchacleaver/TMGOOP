@@ -1027,10 +1027,29 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, "Customer information updated.");
         isCustomerVisible(false);
+        isCustomerSaveVisible(false);
     }//GEN-LAST:event_saveCustomerUpdateButtonActionPerformed
 
     private void saveEmployeeUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveEmployeeUpdateButtonActionPerformed
-        // TODO add your handling code here:
+        int id = Integer.parseInt(searchEmpIDTextField.getText());
+        String newEmployeeName = resultsEmpNameTextField.getText();
+        String newEmployeeDateOfBirth = resultsEmpDOBTextField.getText();
+        String newEmployeeAddress = resultsEmpAddressTextField.getText();
+        String newEmployeePhone = resultsEmpPhoneTextField.getText();        
+        char newEmployeeGender = resultsEmpGenderComboBox.getSelectedItem().toString().charAt(0);
+        Employee em = searchAEmployee(id);
+        em.setAddress(newEmployeeAddress);
+        em.setName(newEmployeeName);
+        em.setGender(newEmployeeGender);        
+        em.setPhone(newEmployeePhone);
+        em.setName(newEmployeeName);
+        
+        
+        
+        
+        JOptionPane.showMessageDialog(this, "Customer information updated.");
+        isEmployeeVisible(false);
+        isEmployeeSaveVisible(false);
     }//GEN-LAST:event_saveEmployeeUpdateButtonActionPerformed
 
     /**
