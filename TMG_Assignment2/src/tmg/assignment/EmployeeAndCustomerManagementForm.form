@@ -120,7 +120,7 @@
                               </Group>
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -132,24 +132,18 @@
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="cuNameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="cuAddressTextField" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="cuLicenseNumberTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="cuPhoneTextField" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                                                  <Component id="resultsCuNameTextField" max="32767" attributes="0"/>
-                                              </Group>
-                                              <Component id="resultsCuAddressTextField" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="resultsCuDOBTextField" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                                              <Component id="resultsCuNameTextField" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="resultsCuPhoneTextField" min="-2" pref="190" max="-2" attributes="0"/>
-                                          <Component id="resultsCuLicenseNumberTextField" min="-2" pref="190" max="-2" attributes="0"/>
+                                          <Component id="resultsCuDOBTextField" alignment="0" pref="190" max="32767" attributes="0"/>
+                                          <Component id="resultsCuLicenseNumberTextField" pref="190" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -160,22 +154,34 @@
                                       </Group>
                                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="resultsCuGenderComboBox" min="-2" pref="190" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="resultsCuLicenseExpiryTextField" max="32767" attributes="0"/>
-                                              <Component id="resultsCuAgeTextField" max="32767" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="updateCustomerButton" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="saveCustomerUpdateButton" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="resultsCuGenderComboBox" min="-2" pref="190" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="resultsCuAgeTextField" max="32767" attributes="0"/>
+                                          <Component id="resultsCuLicenseExpiryTextField" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="cuPhoneTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cuAddressTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="resultsCuAddressTextField" pref="190" max="32767" attributes="0"/>
+                                          <Component id="resultsCuPhoneTextField" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="updateCustomerButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="268" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -211,13 +217,13 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cuAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="resultsCuAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="cuPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsCuPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cuAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="resultsCuAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -239,9 +245,12 @@
                           <Component id="resultsCuGenderComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cuGenderTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                      <Component id="updateCustomerButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="112" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="updateCustomerButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="saveCustomerUpdateButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="109" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -324,7 +333,7 @@
             <Component class="javax.swing.JLabel" name="jLabel23">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Sitka Text" size="14" style="1"/>
+                  <Font name="Sitka Text" size="24" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="0" red="ff" type="rgb"/>
@@ -369,6 +378,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Update"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateCustomerButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="saveCustomerUpdateButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Save"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveCustomerUpdateButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -395,10 +415,6 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                              <Component id="empSearchResultsTextField" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -411,34 +427,43 @@
                               <Component id="empSearchButton" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                              <Component id="updateEmployeeButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                              <Component id="saveEmployeeUpdateButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="empDOBTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="empPhoneTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="empPhoneExtensionTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="empUsernameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="empGenderTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="empNameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="empAddressTextField" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="resultsEmpDOBTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpNameTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpAddressTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpPhoneTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpPhoneExtensionTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpUsernameTextField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="resultsEmpGenderComboBox" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="empDOBTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="empPhoneTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="empPhoneExtensionTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="empUsernameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="empGenderTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="empNameTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="empAddressTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="resultsEmpDOBTextField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resultsEmpNameTextField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resultsEmpAddressTextField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resultsEmpPhoneTextField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resultsEmpPhoneExtensionTextField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resultsEmpUsernameTextField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resultsEmpGenderComboBox" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                      <Component id="empSearchResultsTextField" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace pref="133" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="updateEmployeeButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -452,9 +477,9 @@
                           <Component id="searchEmpIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="empSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                       <Component id="empSearchResultsTextField" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="empNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -489,8 +514,11 @@
                           <Component id="empGenderTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="resultsEmpGenderComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                      <Component id="updateEmployeeButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="updateEmployeeButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="saveEmployeeUpdateButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace pref="133" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -500,7 +528,7 @@
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Sitka Text" size="14" style="1"/>
+                  <Font name="Sitka Text" size="24" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="0" red="ff" type="rgb"/>
@@ -595,6 +623,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Update"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateEmployeeButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="saveEmployeeUpdateButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Save"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveEmployeeUpdateButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -711,7 +750,7 @@
             <Component class="javax.swing.JLabel" name="jLabel35">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Sitka Text" size="14" style="1"/>
+                  <Font name="Sitka Text" size="24" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="0" red="ff" type="rgb"/>
@@ -822,11 +861,11 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel26" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel29" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -851,17 +890,17 @@
                                   <Component id="addCuLicenseExpiryDatePicker" alignment="0" pref="190" max="32767" attributes="0"/>
                                   <Component id="addCuAgeTextField" max="32767" attributes="0"/>
                               </Group>
+                              <EmptySpace min="0" pref="115" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="125" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel26" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="jLabel26" min="-2" pref="46" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel27" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -874,23 +913,23 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addCuAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="addCuPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addCuAddressTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="addCuLicenseNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addCuGenderComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel44" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addCuAgeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -904,12 +943,12 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel44" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="addCuAgeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="addCuGenderComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       <Component id="addNewCuButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="148" max="32767" attributes="0"/>
+                      <EmptySpace pref="156" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -918,7 +957,7 @@
             <Component class="javax.swing.JLabel" name="jLabel26">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Sitka Text" size="14" style="1"/>
+                  <Font name="Sitka Text" size="24" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="0" red="ff" type="rgb"/>
