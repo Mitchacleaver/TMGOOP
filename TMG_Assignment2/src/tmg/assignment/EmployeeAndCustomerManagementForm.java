@@ -1028,6 +1028,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Customer information updated.");
         isCustomerVisible(false);
         isCustomerSaveVisible(false);
+        SearchCuIDTextField.setText("");
     }//GEN-LAST:event_saveCustomerUpdateButtonActionPerformed
 
     private void saveEmployeeUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveEmployeeUpdateButtonActionPerformed
@@ -1050,6 +1051,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Customer information updated.");
         isEmployeeVisible(false);
         isEmployeeSaveVisible(false);
+        searchEmpIDTextField.setText("");
     }//GEN-LAST:event_saveEmployeeUpdateButtonActionPerformed
 
     /**
