@@ -814,8 +814,8 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
             resultsCuLicenseNumberTextField.setText(found.getPhone());
             resultsCuGenderComboBox.getModel().setSelectedItem(found.getGender());        
             //resultsCuGenderComboBox.setSelectedItem(found.getGender()); 
-            resultsCuDOBTextField.sdf.setDate(found.getDateOfBirth());
-            resultsCuLicenseExpiryTextField.sdf.setDate(found.getLicenseExpiry());
+            resultsCuDOBTextField.setText(found.getDateOfBirth().toString());
+            resultsCuLicenseExpiryTextField.setText(found.getLicenseExpiry().toString());
             resultsCuAgeTextField.setText(String.valueOf(found.getAge()));
             
         }
@@ -840,7 +840,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         else
         {
             resultsEmpNameTextField.setText(found.getName());
-            resultsEmpDOBTextField.setText(found.getDateOfBirth());
+            resultsEmpDOBTextField.setText(found.getDateOfBirth().toString());
             resultsEmpAddressTextField.setText(found.getAddress());
             resultsEmpPhoneTextField.setText(found.getPhone());
             resultsEmpPhoneExtensionTextField.setText(found.getPhoneExtension());
