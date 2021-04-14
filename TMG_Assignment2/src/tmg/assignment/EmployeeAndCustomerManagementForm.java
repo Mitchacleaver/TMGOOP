@@ -138,6 +138,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         inputEndRentalDate = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         rentalDisplayTable = new javax.swing.JTable();
+        searchRentalButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -783,6 +784,8 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(rentalDisplayTable);
 
+        searchRentalButton.setText("Search");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -794,15 +797,17 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(inputStartRentalDate, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(73, 73, 73)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(inputEndRentalDate, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(inputEndRentalDate, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33)
+                        .addComponent(searchRentalButton))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addComponent(jLabel2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 496, Short.MAX_VALUE)
+                .addContainerGap(47, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -814,7 +819,8 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
                     .addComponent(inputStartRentalDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(inputEndRentalDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4)
+                    .addComponent(searchRentalButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(30, Short.MAX_VALUE))
@@ -1297,6 +1303,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
     private javax.swing.JButton saveEmployeeUpdateButton;
     private javax.swing.JButton searchCuIDButton;
     private javax.swing.JTextField searchEmpIDTextField;
+    private javax.swing.JButton searchRentalButton;
     private javax.swing.JButton updateCustomerButton;
     private javax.swing.JButton updateEmployeeButton;
     // End of variables declaration//GEN-END:variables
