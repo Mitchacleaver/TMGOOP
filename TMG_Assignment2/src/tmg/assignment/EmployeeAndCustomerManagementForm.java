@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  * @author mitch
  */
 public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
-    ArrayList<Person> persons = new ArrayList<Person>();
+    
     ArrayList<Customer> customers = new ArrayList<Customer>();
     ArrayList<Employee> employees = new ArrayList<Employee>();
 
