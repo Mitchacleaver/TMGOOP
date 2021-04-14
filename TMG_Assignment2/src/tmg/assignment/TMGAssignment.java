@@ -23,9 +23,7 @@ public class TMGAssignment {
         form.show();
         Date d = new Date();
         SimpleDateFormat sdf= new SimpleDateFormat("DD/MM/YYYY");
-        //Employee em = new Employee("MAC", "2", 1, "Mitch", "06/02/2001", "12 Troon Place", "02108226376", 'M');
-        //Customer cu = new Customer(20, "1", 22/03/2021, 1, "Jackson", 06/02/2001, "12 Troon Place", "02108226376", 'M');
-        //Customer cu = new Customer(0, licenseNumber, date, 0, name, date, address, phone, 0)
+
         
 
 
