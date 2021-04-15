@@ -827,6 +827,11 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         );
 
         homePageButton.setText("Home");
+        homePageButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                homePageButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1175,6 +1180,12 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
     private void inputEndRentalDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputEndRentalDateActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_inputEndRentalDateActionPerformed
+
+    private void homePageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homePageButtonActionPerformed
+        HomePage form = new HomePage();
+        form.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_homePageButtonActionPerformed
 
     /**
      * @param args the command line arguments
