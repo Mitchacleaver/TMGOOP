@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stockmaintenacecomponet;
+package TMG.Assignment2;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -28,7 +28,6 @@ public final class StockManagement extends javax.swing.JFrame
     "Indian Rosewood", "Cedar", 95, 1995, 40, "White", 95, 80, 105, "In Store", 
     LocalDate.of(2021, Month.APRIL, 18), LocalDate.of(2021, Month.APRIL, 25));
     
-    
     /**
      * Creates new form StockManagement
      * @param option
@@ -37,7 +36,7 @@ public final class StockManagement extends javax.swing.JFrame
     public void isGuitarModelsEditable(boolean option)
     {
         RentTextFieldSearch.setEditable(option);
-        //StatusTextFieldSearch.setEditable(option);
+        StatusComboBox.setEditable(option);
         //DayRentedTextFieldSearch.setEditable(option);
         //DayDueTextFieldSearch.setEditable(option);
     }
@@ -134,6 +133,8 @@ public final class StockManagement extends javax.swing.JFrame
         BackWoodComboBox = new javax.swing.JComboBox<>();
         TopWoodComboBox = new javax.swing.JComboBox<>();
         AddGuitarButton = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        StatusComboBox = new javax.swing.JComboBox<>();
         SearchItemPane = new javax.swing.JPanel();
         SearchItemButton = new javax.swing.JButton();
         searchSerialTextField = new javax.swing.JTextField();
@@ -175,7 +176,7 @@ public final class StockManagement extends javax.swing.JFrame
         jScrollPane2 = new javax.swing.JScrollPane();
         DisplayTable = new javax.swing.JTable();
         jTabbedPane6 = new javax.swing.JTabbedPane();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
         AllGuitarsTable = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -260,11 +261,11 @@ public final class StockManagement extends javax.swing.JFrame
 
         BuilderComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fender", "Martin", "Gibson", "Collings", "Olson", "Ryan", "Paras", "Raj" }));
 
-        TypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acoustic", "Electric" }));
+        TypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acoustic", "Electric", " " }));
 
-        BackWoodComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Indian Rosewood", "Brazilian Rosewood", "Mahogany", "Maple", "Cocobola", "Cedar", "Adriondack", "Alder ", "Sitka" }));
+        BackWoodComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Indian Rosewood", "Brazilian Rosewood", "Mahogany", "Maple", "Cocobolo", "Cedar", "Adirondack", "Alder", "Sitka" }));
 
-        TopWoodComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Indian Rosewood", "Brazilian Rosewood", "Mahogany", "Maple", "Cocobola", "Cedar", "Adriondack", "Alder ", "Sitka" }));
+        TopWoodComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Indian Rosewood", "Brazilian Rosewood", "Mahogany", "Maple", "Cocobolo", "Cedar", "Adirondack", "Alder", "Sitka" }));
 
         AddGuitarButton.setText("ADD");
         AddGuitarButton.addActionListener(new java.awt.event.ActionListener() {
@@ -272,6 +273,10 @@ public final class StockManagement extends javax.swing.JFrame
                 AddGuitarButtonActionPerformed(evt);
             }
         });
+
+        jLabel17.setText("Guitar Status:");
+
+        StatusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In Store", "Rented Out", "Under Maintenance" }));
 
         javax.swing.GroupLayout AddGuitarPaneLayout = new javax.swing.GroupLayout(AddGuitarPane);
         AddGuitarPane.setLayout(AddGuitarPaneLayout);
@@ -295,7 +300,8 @@ public final class StockManagement extends javax.swing.JFrame
                                     .addComponent(BuilderLabel)
                                     .addComponent(TypeLabel)
                                     .addComponent(BackWoodLabel)
-                                    .addComponent(TopWoodLabel))
+                                    .addComponent(TopWoodLabel)
+                                    .addComponent(jLabel17))
                                 .addGap(18, 18, 18)
                                 .addGroup(AddGuitarPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(BackWoodComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -309,9 +315,10 @@ public final class StockManagement extends javax.swing.JFrame
                                     .addComponent(GuitarColourTextField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(BuilderComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(ManufactureTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                                    .addComponent(TopWoodComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                    .addComponent(TopWoodComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(StatusComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                     .addGroup(AddGuitarPaneLayout.createSequentialGroup()
-                        .addGap(194, 194, 194)
+                        .addGap(192, 192, 192)
                         .addComponent(AddGuitarButton)))
                 .addContainerGap(184, Short.MAX_VALUE))
         );
@@ -366,9 +373,13 @@ public final class StockManagement extends javax.swing.JFrame
                 .addGroup(AddGuitarPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TopWoodLabel)
                     .addComponent(TopWoodComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AddGuitarPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(StatusComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
                 .addComponent(AddGuitarButton)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(218, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Add Guitar", AddGuitarPane);
@@ -646,7 +657,7 @@ public final class StockManagement extends javax.swing.JFrame
                 .addGroup(SearchItemPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(UpdateButton)
                     .addComponent(SaveUpdateButton))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(207, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Search Item", SearchItemPane);
@@ -659,9 +670,7 @@ public final class StockManagement extends javax.swing.JFrame
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 222, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1)
         );
 
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -692,9 +701,9 @@ public final class StockManagement extends javax.swing.JFrame
                 "Serial Number", "Guitar Model", "Guitar Status", "Rent Charge", "Year"
             }
         ));
-        jScrollPane3.setViewportView(AllGuitarsTable);
+        jScrollPane1.setViewportView(AllGuitarsTable);
 
-        jTabbedPane6.addTab("List of all owned guitars", jScrollPane3);
+        jTabbedPane6.addTab("", jScrollPane1);
 
         jTabbedPane5.addTab("All Guitars", jTabbedPane6);
 
@@ -779,12 +788,11 @@ public final class StockManagement extends javax.swing.JFrame
         String guitarType = (String) TypeComboBox.getSelectedItem();
         String guitarBackWood = (String) BackWoodComboBox.getSelectedItem();
         String guitarTopWood = (String) TopWoodComboBox.getSelectedItem();
-        
-        
+        String guitarStatus = (String) StatusComboBox.getSelectedItem();
         
         GuitarModels newGuitar = new GuitarModels(guitarModel, guitarType, guitarBuilder, 
         guitarBackWood, guitarTopWood, guitarSerialNumber, guitarYear, guitarRentCharge, 
-        guitarColour, guitarLength, guitarWidth, guitarHeight, guitarType, LocalDate.MIN, LocalDate.MIN);
+        guitarColour, guitarLength, guitarWidth, guitarHeight, guitarStatus, LocalDate.MIN, LocalDate.MIN);
         
         guitars.add(newGuitar);
         
@@ -918,7 +926,7 @@ public final class StockManagement extends javax.swing.JFrame
             isGuitarModelsEditable(true);
             
             RentTextFieldSearch.setText("");
-            //StatusTextFieldSearch.setSelectedItem("");
+            //StatusComboBox.setSelectedItem("");
             //DayRentedTextFieldSearch.setText("");
             //DayDueTextFieldSearch.setText("");
             
@@ -934,20 +942,18 @@ public final class StockManagement extends javax.swing.JFrame
 
     private void SaveUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveUpdateButtonActionPerformed
         // TODO add your handling code here:
+       isGuitarModelsEditable(true);
+        
        double guitarSerialNumber = Double.parseDouble(searchSerialTextField.getText());
        GuitarModels g = searchGuitar((int) guitarSerialNumber);
        
        double guitarRentCharge = Double.parseDouble(RentTextFieldSearch.getText());
        g.setGuitarRentCharge(guitarRentCharge);
        
-       /*IndividualGuitar.Status guitarStatus =(IndividualGuitar.Status)StatusTextFieldSearch.getSelectedItem();
+       String guitarStatus = (String) StatusComboBox.getSelectedItem();
        g.setGuitarStatus(guitarStatus);
-       StatusTextFieldSearch.setSelectedItem(g.getGuitarStatus());*/
        
-       
-       JOptionPane.showMessageDialog(this, "Updated succesfully");
-       
-       DefaultTableModel model = (DefaultTableModel) DisplayTable.getModel();
+       DefaultTableModel model = (DefaultTableModel) AllGuitarsTable.getModel();
        model.setRowCount(0);
        Object rows[] = new Object[5];
         
@@ -959,11 +965,10 @@ public final class StockManagement extends javax.swing.JFrame
             rows[3] = guitars.get(i).guitarRentCharge;
             rows[4] = guitars.get(i).getGuitarYear();
             model.addRow(rows);
+        
+        JOptionPane.showMessageDialog(this, "Updated succesfully");    
        }
-       
-       
-        
-        
+      
     }//GEN-LAST:event_SaveUpdateButtonActionPerformed
 
     private void DayDueTextFieldSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DayDueTextFieldSearchActionPerformed
@@ -1048,6 +1053,7 @@ public final class StockManagement extends javax.swing.JFrame
     private javax.swing.JLabel SerialLabel;
     private javax.swing.JTextField SerialNumberTextField;
     private javax.swing.JTextField SerialNumberTextFieldSearch;
+    private javax.swing.JComboBox<String> StatusComboBox;
     private javax.swing.JComboBox<String> StatusTextFieldSearch;
     private javax.swing.JComboBox<String> TopWoodComboBox;
     private javax.swing.JLabel TopWoodLabel;
@@ -1066,6 +1072,7 @@ public final class StockManagement extends javax.swing.JFrame
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1076,8 +1083,8 @@ public final class StockManagement extends javax.swing.JFrame
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane5;
     private javax.swing.JTabbedPane jTabbedPane6;
