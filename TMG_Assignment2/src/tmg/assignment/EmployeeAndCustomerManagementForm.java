@@ -139,6 +139,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         rentalDisplayTable = new javax.swing.JTable();
         searchRentalButton = new javax.swing.JButton();
+        homePageButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -512,7 +513,6 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
         });
 
         addNewEmButton.setBackground(new java.awt.Color(204, 204, 204));
-        addNewEmButton.setForeground(new java.awt.Color(255, 51, 255));
         addNewEmButton.setText("Add New Employee");
         addNewEmButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -826,6 +826,8 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
+        homePageButton.setText("Home");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -841,20 +843,24 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 694, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(283, 283, 283))
+                .addGap(173, 173, 173)
+                .addComponent(homePageButton)
+                .addGap(37, 37, 37))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(homePageButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jTabbedPane2)
                         .addComponent(jTabbedPane1))
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(394, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -1245,6 +1251,7 @@ public class EmployeeAndCustomerManagementForm extends javax.swing.JFrame {
     private javax.swing.JButton empSearchButton;
     private javax.swing.JLabel empSearchResultsTextField;
     private javax.swing.JLabel empUsernameTextField;
+    private javax.swing.JButton homePageButton;
     private javax.swing.JTextField inputEndRentalDate;
     private javax.swing.JTextField inputStartRentalDate;
     private javax.swing.JButton jButton1;
