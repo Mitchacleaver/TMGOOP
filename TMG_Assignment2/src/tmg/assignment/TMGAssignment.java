@@ -20,6 +20,7 @@ public class TMGAssignment {
     public static void main(String[] args) {
         // TODO code application logic here
         EmployeeAndCustomerManagementForm form = new EmployeeAndCustomerManagementForm();
+        //StockManagement form = new StockManagement();
         form.show();
         Date d = new Date();
         SimpleDateFormat sdf= new SimpleDateFormat("DD/MM/YYYY");
