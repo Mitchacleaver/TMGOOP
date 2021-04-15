@@ -91,11 +91,7 @@ public final class StockManagement extends javax.swing.JFrame
      *
      * @param guitars
      */
-    public void Guitars(ArrayList<GuitarModels> guitars)
-    {
-        StockManagement.guitars = guitars;
-    }
-     
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
