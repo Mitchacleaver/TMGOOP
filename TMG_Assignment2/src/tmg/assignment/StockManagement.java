@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TMG.Assignment2;
+package tmg.assignment;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -792,7 +792,7 @@ public final class StockManagement extends javax.swing.JFrame
         
         GuitarModels newGuitar = new GuitarModels(guitarModel, guitarType, guitarBuilder, 
         guitarBackWood, guitarTopWood, guitarSerialNumber, guitarYear, guitarRentCharge, 
-        guitarColour, guitarLength, guitarWidth, guitarHeight, guitarStatus, LocalDate.MIN, LocalDate.MIN);
+        guitarColour, guitarLength, guitarWidth, guitarHeight, guitarStatus, LocalDate.of(2021, Month.APRIL, 15), LocalDate.of(2021, Month.APRIL, 22));
         
         guitars.add(newGuitar);
         
@@ -926,7 +926,7 @@ public final class StockManagement extends javax.swing.JFrame
             isGuitarModelsEditable(true);
             
             RentTextFieldSearch.setText("");
-            //StatusComboBox.setSelectedItem("");
+            StatusComboBox.setSelectedItem("");
             //DayRentedTextFieldSearch.setText("");
             //DayDueTextFieldSearch.setText("");
             
